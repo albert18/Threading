@@ -1,0 +1,11 @@
+c:\Er-Test\Threading\TASK\bin\Debug\netcoreapp3.0\TASK.exe
+C:\Er-Test\Threading\TASK\bin\Debug\netcoreapp3.0\TASK.deps.json
+C:\Er-Test\Threading\TASK\bin\Debug\netcoreapp3.0\TASK.runtimeconfig.json
+C:\Er-Test\Threading\TASK\bin\Debug\netcoreapp3.0\TASK.runtimeconfig.dev.json
+c:\Er-Test\Threading\TASK\bin\Debug\netcoreapp3.0\TASK.dll
+c:\Er-Test\Threading\TASK\bin\Debug\netcoreapp3.0\TASK.pdb
+c:\Er-Test\Threading\TASK\obj\Debug\netcoreapp3.0\TASK.csprojAssemblyReference.cache
+c:\Er-Test\Threading\TASK\obj\Debug\netcoreapp3.0\TASK.AssemblyInfoInputs.cache
+c:\Er-Test\Threading\TASK\obj\Debug\netcoreapp3.0\TASK.AssemblyInfo.cs
+c:\Er-Test\Threading\TASK\obj\Debug\netcoreapp3.0\TASK.dll
+c:\Er-Test\Threading\TASK\obj\Debug\netcoreapp3.0\TASK.pdb

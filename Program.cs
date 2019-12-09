@@ -7,43 +7,52 @@ namespace coreConsole
     {
         public static void Main(string[] args)
         {
-            System.Console.WriteLine(Thread.CurrentThread.IsThreadPoolThread);
 
-            Employee employee = new Employee();
-            employee.Name = "Albert";
-            employee.CompanyName = "SomeWhere";
-
-            ThreadPool.QueueUserWorkItem(new WaitCallback(DisplayEmployee), employee);
-
-            var processorCount = Environment.ProcessorCount;
-            ThreadPool.SetMaxThreads(20,30);
-            int workerThreads = 0;
-            int completionPortThreads = 0;
-            ThreadPool.GetAvailableThreads(out workerThreads, out completionPortThreads);
-
-            System.Console.WriteLine(Thread.CurrentThread.IsThreadPoolThread);
-
-            
         }
-
-        private static void DisplayEmployee(object employee)
-        {
-            System.Console.WriteLine(Thread.CurrentThread.IsThreadPoolThread);
-            Employee emp = employee as Employee;
-            System.Console.WriteLine("Person Name is {0} and the company name {1}", emp.Name, emp.CompanyName);
-        } 
+        
+        
     }
 
-    class Employee
-    {
-        public string Name { get; set; }
-        public string CompanyName { get; set; }
-    }
 }
 
 
+#region ThreadPool
+    //         public static void Main(string[] args)
+    //     {
+    //         System.Console.WriteLine(Thread.CurrentThread.IsThreadPoolThread);
 
+    //         Employee employee = new Employee();
+    //         employee.Name = "Albert";
+    //         employee.CompanyName = "SomeWhere";
 
+    //         ThreadPool.QueueUserWorkItem(new WaitCallback(DisplayEmployee), employee);
+
+    //         var processorCount = Environment.ProcessorCount;
+    //         ThreadPool.SetMaxThreads(20,30);
+    //         int workerThreads = 0;
+    //         int completionPortThreads = 0;
+    //         ThreadPool.GetAvailableThreads(out workerThreads, out completionPortThreads);
+
+    //         System.Console.WriteLine(Thread.CurrentThread.IsThreadPoolThread);
+
+            
+    //     }
+
+    //     private static void DisplayEmployee(object employee)
+    //     {
+    //         System.Console.WriteLine(Thread.CurrentThread.IsThreadPoolThread);
+    //         Employee emp = employee as Employee;
+    //         System.Console.WriteLine("Person Name is {0} and the company name {1}", emp.Name, emp.CompanyName);
+    //     } 
+    // }
+
+    // class Employee
+    // {
+    //     public string Name { get; set; }
+    //     public string CompanyName { get; set; }
+    // }
+
+#endregion
 
 
 // private static bool isCompleted;
