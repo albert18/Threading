@@ -8,27 +8,32 @@ namespace coreConsole
 
     class Program
     {
+        private static bool isCompleted;
+
         static void Main(string[] args)
-        {
-            
-            Thread thread = new Thread(WriteNewThread);
-               thread.Start();
+        {   
+            Thread thread = new Thread(HelloWorld);
 
-            //Main Thread
-            for (int i = 0; i < 1000; i++)
-            {
-                System.Console.WriteLine(" A" + i);
-            }
+            thread.Start();
 
-            
+            HelloWorld();
+
+
+
+
+
+
         }
 
-        private static void WriteNewThread()
+        private static void HelloWorld()
         {
-            for (int i = 0; i < 1000; i++)
+            
+            if (!isCompleted)
             {
-                System.Console.WriteLine(" Z" + i);
+                System.Console.WriteLine("Hello World!!");    
+                isCompleted = true;
             }
+            
         }
     }
 }
