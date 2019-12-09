@@ -10,6 +10,8 @@ namespace coreConsole
     {
         private static bool isCompleted;
 
+        static readonly object lockCompleted = new object();
+
         static void Main(string[] args)
         {   
             Thread thread = new Thread(HelloWorld);
@@ -27,13 +29,14 @@ namespace coreConsole
 
         private static void HelloWorld()
         {
-            
-            if (!isCompleted)
+            lock (lockCompleted)
             {
-                System.Console.WriteLine("Hello World!!");    
-                isCompleted = true;
+                if (!isCompleted)
+                    {
+                        isCompleted = true;
+                        System.Console.WriteLine("Hello World!!");    
+                    }
             }
-            
         }
     }
 }
