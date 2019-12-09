@@ -14,29 +14,47 @@ namespace coreConsole
 
         static void Main(string[] args)
         {   
-            Thread thread = new Thread(HelloWorld);
+            #region 1
+            // Thread thread = new Thread(HelloWorld);
 
-            thread.Start();
+            // thread.Start();
 
-            HelloWorld();
-
-
-
+            // HelloWorld();                
 
 
+            // new Thread(PrintOneToThirty).Start();
+
+            // PrintOneToThirty();
+            #endregion
+
+ 
 
         }
 
-        private static void HelloWorld()
-        {
-            lock (lockCompleted)
-            {
-                if (!isCompleted)
-                    {
-                        isCompleted = true;
-                        System.Console.WriteLine("Hello World!!");    
-                    }
-            }
-        }
+
+
+
+        #region 1
+        // private static void HelloWorld()
+        // {
+        //     lock (lockCompleted)
+        //     {
+        //         if (!isCompleted)
+        //             {
+        //                 isCompleted = true;
+        //                 System.Console.WriteLine("Hello World!!");    
+        //             }
+        //     }
+        // }    
+
+        // private static void PrintOneToThirty()
+        // {
+        //     for (int i = 0; i < 30; i++)
+        //     {
+        //         System.Console.WriteLine(i + 1 + " ");
+        //     }
+        // }
+        #endregion
+
     }
 }
