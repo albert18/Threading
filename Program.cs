@@ -7,10 +7,17 @@ namespace coreConsole
     {
         public static void Main(string[] args)
         {
-
+            System.Console.WriteLine("dasdaads");
+            // Thread thread = new Thread(PrintHelloWorld);
+            // thread.Start();
+            // System.Console.WriteLine("Hello World printed");
         }
-        
-        
+
+        private static void PrintHelloWorld()
+        {
+            // System.Console.WriteLine("Hello World");
+            // Thread.Sleep(5000);
+        }
     }
 
 }
