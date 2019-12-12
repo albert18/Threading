@@ -8,14 +8,44 @@ namespace TASK
         static void Main(string[] args)
         {   
 
-
-            // System.Console.WriteLine("Hello World Printed");
+            
 
 
             
         }
+
+
     }
 }
+
+
+
+
+
+// Exercise 1
+// private static void Demo()
+// {
+//     try
+//     {
+//         Execute();
+//     }
+//     catch (Exception ex)
+//     {
+//         System.Console.WriteLine(ex.Message);
+        
+//     }
+// }
+
+// private static void Execute()
+// {
+//     throw null;
+// }
+
+
+
+
+
+
 
 
 
