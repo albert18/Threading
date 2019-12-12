@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace TASK
 {
@@ -8,13 +9,17 @@ namespace TASK
         static void Main(string[] args)
         {   
 
+            Task task = new Task(SimpleMethod);
             
-
+            task.Start();
 
             
         }
 
-
+        private static void SimpleMethod()
+        {
+            System.Console.WriteLine("Hello World");
+        }
     }
 }
 
