@@ -20,13 +20,16 @@ namespace Task1
 
 
 
+//class Program------------------------------------------Task with continuation
+//Task<string> antecedent = Task.Run(() =>
+
+//DateTime.Today.ToShortTimeString());
+//Task<string> continuation = antecedent.ContinueWith(x => "Today is " + antecedent.Result);
+//Console.WriteLine(continuation.Result);
 
 
 
-
-
-
-//class Program------------------------------------------
+//class Program------------------------------------------Task with I/O
 //{
 //    static void Main(string[] args)
 //    {
